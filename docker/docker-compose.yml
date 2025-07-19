@@ -1,0 +1,25 @@
+﻿name: company-directory
+services:
+  mongo:
+    image: mongo
+    # restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      
+  rabbit_mq:
+    build:
+      dockerfile: rabbit-mq.dockerfile
+      context: .
+    # restart: always
+    ports:
+      - "5552:5552"
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: -rabbitmq_stream advertised_host localhost
+    

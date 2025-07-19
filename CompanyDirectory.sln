@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyDirectory.API", "src\CompanyDirectory.API\CompanyDirectory.API.csproj", "{110D07DE-418C-4CCF-A7BE-E834BA9C576E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".files", ".files", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		test-data\company-data.csv = test-data\company-data.csv
+		docker\docker-compose.yml = docker\docker-compose.yml
+		test-data\employees-data.csv = test-data\employees-data.csv
+		test-data\emplyee-updated.csv = test-data\emplyee-updated.csv
+		docker\rabbit-mq.dockerfile = docker\rabbit-mq.dockerfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{110D07DE-418C-4CCF-A7BE-E834BA9C576E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110D07DE-418C-4CCF-A7BE-E834BA9C576E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110D07DE-418C-4CCF-A7BE-E834BA9C576E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110D07DE-418C-4CCF-A7BE-E834BA9C576E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CA9B233-9377-465B-B722-2CBD4F3BACCD}
+	EndGlobalSection
+EndGlobal
